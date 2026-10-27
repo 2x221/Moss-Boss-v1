@@ -6,4 +6,4 @@ pluginManagement {
     }
 }
 
-rootProject.name = "Baritone-moss-bot-v1"
+rootProject.name = "Moss-Boss-v1"
