@@ -29,6 +29,9 @@ jobs:
       - name: Build with Gradle
         run: ./gradlew build
 
+      - name: Build with Gradle
+        run: ./gradlew build --refresh-dependencies
+
       - name: Create GitHub Release and Upload Jar
         uses: softprops/action-gh-release@v1
         with:
