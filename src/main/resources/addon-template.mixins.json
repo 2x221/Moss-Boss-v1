@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "package": "com.mossbot_addon.addon.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "MossBotMixin",
+    "PlayerHeadUtilsMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "auto-moss-bot",
+  "version": "0.1",
+  "name": "Moss Boss",
+  "description": "Auto Moss Bot addon for Meteor Client",
+  "authors": ["JerkinOffInMyCar"],
+  "contact": {},
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "meteor": [
+      "com.mossbot_addon.addon.mossbot_addon"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.18.2",
+    "minecraft": "~1.21.11",
+    "java": ">=21"
+  }
+}

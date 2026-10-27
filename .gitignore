@@ -1,0 +1,25 @@
+# Gradle & Build folders
+.gradle/
+build/
+out/
+classes/
+
+# Local Minecraft run directory (logs, crash reports, configs, saves)
+run/
+
+# IDE folders & settings (prevents leaking local system paths)
+.idea/
+*.iml
+*.ipr
+*.iws
+.settings/
+.vscode/
+bin/
+.classpath
+.project
+
+# Eclipse launch files
+*.launch
+
+# macOS system files
+*.DS_Store
