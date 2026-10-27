@@ -5,6 +5,9 @@ on:
     tags:
       - 'v*'
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -29,6 +32,6 @@ jobs:
       - name: Create GitHub Release and Upload Jar
         uses: softprops/action-gh-release@v1
         with:
-          files: build/libs/*-dev.jar # (or update to your preferred target jar filter)
+          files: build/libs/*.jar
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
