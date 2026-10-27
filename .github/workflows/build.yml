@@ -1,4 +1,4 @@
-name: Release Pre-built Jar
+name: Release Upload
 
 on:
   push:
@@ -16,24 +16,9 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      # If you want GitHub Actions to build it without gradle checksum issues, we can include the jar directly,
-      # or you can commit the built jar to a release artifacts folder.
-      # Let's have the workflow build using a stable gradle offline configuration:
-      - name: Set up JDK 21
-        uses: actions/setup-java@v4
-        with:
-          java-version: '21'
-          distribution: 'temurin'
-
-      - name: Grant execute permission
-        run: chmod +x gradlew
-
-      - name: Build Local Jar
-        run: ./gradlew remapJar --offline || ./gradlew remapJar
-
       - name: Create GitHub Release and Upload Jar
         uses: softprops/action-gh-release@v1
         with:
-          files: build/libs/*.jar
+          files: release/*.jar
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
