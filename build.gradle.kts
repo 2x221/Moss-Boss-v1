@@ -4,8 +4,12 @@ plugins {
     java
 }
 
-version = "0.1"
+version = "1.0.0"
 group = "com.mossbot_addon"
+
+base {
+    archivesName.set("moss-boss")
+}
 
 repositories {
     maven { url = uri("https://maven.meteordev.org/releases") }

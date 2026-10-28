@@ -537,3 +537,4 @@ public class MossBot extends Module {
 
     private record TargetCandidate(BlockPos pos, boolean hasGrassAbove, boolean canSpread, double rayDistSq) {}
 }
+
