@@ -4,7 +4,7 @@ plugins {
     java
 }
 
-version = "1.0.0"
+version = "1.1"
 group = "com.mossbot_addon"
 
 base {
